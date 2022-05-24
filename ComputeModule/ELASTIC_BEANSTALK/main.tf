@@ -2,7 +2,7 @@
 
 resource "aws_elastic_beanstalk_application" "tftest" {
   name        = var.ebp
-  description = "tf-test-desc"
+  description = var.descrip
 }
 
 resource "aws_elastic_beanstalk_environment" "tfenvtest" {

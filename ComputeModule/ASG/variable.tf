@@ -25,3 +25,7 @@ variable "capacity" {
     type = number
 }
 
+variable "subnetids"{
+    type = list(string)
+    default = ["subnet-020f6930b6cfbd6ea"]
+}
