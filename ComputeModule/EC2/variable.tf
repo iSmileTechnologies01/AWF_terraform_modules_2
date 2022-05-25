@@ -1,18 +1,20 @@
 # # AWS EC2 Instance Type
 variable "ami"{
     type = string
+    default = "ami-09d56f8956ab235b3"
     description = "ami for ec2 instance #example:ami-0022f774911c1d690#"
 }
 
 variable "instance"{
     type = string
+    default = "t2.micro"
     description = "select the instance type example t2 or t3 micro"
 }
 
-variable "vpc" {    
+variable "subnet_id" {    
    type = string
    description = " which vpc id or use the default vpc id"
-   default = "vpc-0fd938f1ed1cc78a8"
+   default = "subnet-08a2a576431e0a5d2"
 }
 
 # variable "instance_type" {

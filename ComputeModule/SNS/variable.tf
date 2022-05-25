@@ -1,6 +1,6 @@
 variable "snstopicname" {
     type = string
-    default = "sharat-updates-topic"
+    default = "moses-updates-topic"
 }
 
 variable "updatesqueue" {

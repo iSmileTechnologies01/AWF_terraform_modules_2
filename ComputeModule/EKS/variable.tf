@@ -10,7 +10,7 @@ variable "rolearn" {
 }
 
 variable "subnetids" {
-    type = list(string)
+    type = list(any)
     default = ["subnet-020f6930b6cfbd6ea", "subnet-065a4ad79383b4db1"]
   
 }

@@ -9,7 +9,7 @@ variable "ebsenv" {
 }
 variable "stackname" {
     type = string
-    default = "64bit Amazon Linux 2015.03 v2.0.3 running Go 1.4"
+    default = "64bit Amazon Linux 2 v3.3.13 running Python 3.8"
 }
 
 variable "descrip" {

@@ -5,7 +5,7 @@ variable "placementgroupname" {
 
 variable "placementgroupstrategy" {
     type = string
-    default = "cluster" 
+    default = "spread" 
 }
 
 variable "asgname" {
@@ -28,4 +28,19 @@ variable "capacity" {
 variable "subnetids"{
     type = list(string)
     default = ["subnet-020f6930b6cfbd6ea"]
+}
+
+variable "imageid" {
+    type = string
+    default = "ami-09d56f8956ab235b3"
+}
+
+variable "instancetype" {
+    type = string
+    default = "t2.micro"
+}
+
+variable "prefix" {
+    type = string
+    default = "foobar"
 }

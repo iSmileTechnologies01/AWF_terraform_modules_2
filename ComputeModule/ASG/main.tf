@@ -6,9 +6,9 @@ resource "aws_placement_group" "test" {
 }
 
 resource "aws_launch_template" "foobar" {
-  name_prefix   = "foobar"
-  image_id      = "ami-1a2b3c"
-  instance_type = "t2.micro"
+  name_prefix   = var.prefix
+  image_id      = var.imageid
+  instance_type = var.instancetype
 }
 
 resource "aws_autoscaling_group" "bar" {
