@@ -5,7 +5,7 @@ variable "tags" {
 }
 
 variable "rolename" {
-  
+
   description = "Name of the role to be created"
   type        = string
 }

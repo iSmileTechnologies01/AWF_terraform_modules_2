@@ -1,5 +1,5 @@
-variable "groupname"{
-    description = "Enter preferred name for group"
-    type = string
+variable "groupname" {
+  description = "Enter preferred name for group"
+  type        = string
 
 }

@@ -1,19 +1,19 @@
 variable "policystring" {
 
-    type = string 
-  
+  type = string
+
 }
 
 
 variable "policydescription" {
 
-    type = string 
-  
+  type = string
+
 }
 
 
 variable "policyname" {
 
-    type = string 
-  
+  type = string
+
 }

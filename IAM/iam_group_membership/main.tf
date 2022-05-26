@@ -1,8 +1,8 @@
 provider "aws" {
-    
-    region = "us-east-1"
 
-  
+  region = "us-east-1"
+
+
 }
 
 
@@ -10,7 +10,7 @@ provider "aws" {
 resource "aws_iam_group_membership" "team" {
   name = var.membershipname
 
-  users =  var.users
+  users = var.users
 
   group = var.group
 }

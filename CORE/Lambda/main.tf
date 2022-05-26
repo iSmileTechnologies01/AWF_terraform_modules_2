@@ -5,6 +5,8 @@ data "aws_iam_role" "example" {
 resource "aws_lambda_function" "test_lambda" {
   # If the file is not in the current working directory you will need to include a 
   # path.module in the filename.
+
+  #Please take note as if file is not added pipeline wont run .
   filename      = var.filename
   function_name = var.function_name
   role          = data.aws_iam_role.example.arn
@@ -17,5 +19,5 @@ resource "aws_lambda_function" "test_lambda" {
 
   runtime = var.runtime
 
-  
+
 }
