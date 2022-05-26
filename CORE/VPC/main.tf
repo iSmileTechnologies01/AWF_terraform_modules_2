@@ -31,14 +31,15 @@ resource "aws_subnet" "pvt_main1" {
   vpc_id     = aws_vpc.vpc.id
   cidr_block = var.pvt1_cidr_block
   availability_zone = var.pvt1_availability_zone
+  
 
 }
 
 # Create a private-subnet2
 resource "aws_subnet" "pvt_main2" {
   vpc_id     = aws_vpc.vpc.id
-  cidr_block = "172.35.2.0/24"
-  availability_zone = "us-east-1b"
+  cidr_block = var.pvt2_cidr_block
+  availability_zone = var.pvt2_availability_zone
 
   
 }
