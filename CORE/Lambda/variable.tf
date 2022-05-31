@@ -4,6 +4,10 @@ variable "filename" {
 
 }
 
+variable "handler" {
+  type = string
+}
+
 variable "runtime" {
   default = "nodejs12.x"
   type    = string
