@@ -14,10 +14,6 @@ variable "function_name" {
   type    = string
 }
 
-variable "function_name" {
-  default = "index.test"
-  type    = string
-}
 
 variable "rolename" {
   default = "IamRole"
