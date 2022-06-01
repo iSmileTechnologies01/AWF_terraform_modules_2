@@ -14,7 +14,7 @@ variable "function_name" {
   type    = string
 }
 
-variable "function_name" {
+variable "handler" {
   default = "index.test"
   type    = string
 }
