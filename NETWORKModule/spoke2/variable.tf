@@ -1,6 +1,6 @@
 variable "spoke2-vpc-cidrblock" {
     type = string
-    default = ["172.32.0.0/16"]
+    default = "172.32.0.0/16"
   
 }
 
@@ -12,7 +12,7 @@ variable "route-table-cidrblock" {
 
 variable "pvt_main1" {
     type = string
-    default = [ "172.32.1.0/24" ]
+    default = "172.32.1.0/24"
   
 }
 
@@ -23,7 +23,7 @@ variable "zone-a" {
 
 variable "pvt_main2" {
     type = string
-    default = ["172.32.2.0/24"]
+    default = "172.32.2.0/24"
   
 }
 
@@ -34,7 +34,7 @@ variable "zone-b" {
 
 variable "pvt_main3" {
     type = string
-    default = ["172.32.3.0/24"]
+    default = "172.32.3.0/24"
   
 }
 
