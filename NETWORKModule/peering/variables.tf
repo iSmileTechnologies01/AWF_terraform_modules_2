@@ -1,3 +1,3 @@
-variable "peer_id" {
+variable "peer_owner_id" {
   type = string
 }
