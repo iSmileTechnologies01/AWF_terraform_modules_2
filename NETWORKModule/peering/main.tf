@@ -1,7 +1,7 @@
 resource "aws_vpc_peering_connection" "peer1" {
   peer_owner_id = var.peer_owner_id
-  peer_vpc_id   = module.hubmodule.hub_vpc_id
-  vpc_id        = module.spokemodules.spoke1_vpc_id
+  peer_vpc_id   = var.hub_vpc
+  vpc_id        = var.spoke1vpc
   auto_accept   = true
 
   tags = {
@@ -19,8 +19,8 @@ resource "aws_vpc_peering_connection" "peer1" {
 
 resource "aws_vpc_peering_connection" "peer2" {
   peer_owner_id = var.peer_owner_id
-  peer_vpc_id   = module.hubmodule.hub_vpc_id
-  vpc_id        = module.spoke2modules.spoke2_vpc_id
+  peer_vpc_id   = var.hub_vpc
+  vpc_id        = var.spoke2vpc
   auto_accept   = true
 
   tags = {
@@ -38,8 +38,8 @@ resource "aws_vpc_peering_connection" "peer2" {
 
 resource "aws_vpc_peering_connection" "peer3" {
   peer_owner_id = var.peer_owner_id
-  peer_vpc_id   = module.hubmodule.hub_vpc_id
-  vpc_id        = module.spoke3modules.spoke3_vpc_id
+  peer_vpc_id   = var.hub_vpc
+  vpc_id        = var.spoke3vpc
   auto_accept   = true
 
   tags = {
