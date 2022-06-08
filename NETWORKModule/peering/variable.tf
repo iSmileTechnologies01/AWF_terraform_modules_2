@@ -5,22 +5,22 @@ variable "peer_owner_id" {
 
 variable "hub_vpc" {
     type = string
-    default = "aws_vpc.hub_vpc.id"
+    default = "vpc-0b0ddbda46bab5524"
 }
 
 variable "spoke1vpc" {
    type = string
-   default = "aws_vpc.spoke1vpc.id"
+   default = "vpc-0814c806fcca05149"
 }
 
 variable "spoke2vpc" {
     type = string
-    default = "aws_vpc.spoke2vpc.id"
+    default = "vpc-0cd90cbb53ead15e8"
   
 }
 
 variable "spoke3vpc" {
     type = string
-    default = "aws_vpc.spoke3vpc.id"
+    default = "vpc-0097eda580c2d1aea"
   
 }
