@@ -5,22 +5,22 @@ variable "peer_owner_id" {
 
 variable "hub_vpc" {
     type = string
-    default = "aws_vpc.hub_vpc.id"
+    default = module.hub.vpc_id
 }
 
 variable "spoke1vpc" {
    type = string
-   default = "aws_vpc.spoke1vpc.id"
+   default = module.spoke.vpc_id
 }
 
 variable "spoke2vpc" {
     type = string
-    default = "aws_vpc.spoke2vpc.id"
+    default = module.spoke2.vpc_id
   
 }
 
 variable "spoke3vpc" {
     type = string
-    default = "aws_vpc.spoke3vpc.id"
+    default = module.spoke3.vpc_id
   
 }
