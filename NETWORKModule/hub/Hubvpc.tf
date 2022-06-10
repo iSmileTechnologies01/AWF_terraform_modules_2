@@ -105,7 +105,7 @@ resource "aws_subnet" "public_subnet_b" {
 }
 resource "aws_subnet" "public_subnet_c" {
   vpc_id     = aws_vpc.hub_vpc.id
-  cidr_block = var.public-subnet-a
+  cidr_block = var.public-subnet-c
   availability_zone = var.zone-c
   tags = {
     Name = "hub-sn-pubc"
