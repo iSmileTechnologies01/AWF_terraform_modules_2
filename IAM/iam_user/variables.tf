@@ -5,7 +5,7 @@ variable "tags" {
 }
 
 variable "username" {
-  
+
   description = "Name of the user to be created"
   type        = string
 }
